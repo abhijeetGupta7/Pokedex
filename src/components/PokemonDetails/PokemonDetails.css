@@ -1,0 +1,75 @@
+.pokemon-details-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;  
+    gap: 5rem;
+    font-size: large;
+}
+
+.pokemon-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pokemon-details-name {
+    font-size:x-large;
+    font-weight: bolder;
+    letter-spacing: 0.6rem;
+}
+
+.pokemon-details-image {
+    max-width: 90%;
+}
+
+.pokemon-details-types {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.pokemon-type {
+    background-color: brown;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.3rem;
+}
+
+
+@media (max-width: 768px) {
+    /* overriding the original gap only, rest still be there */
+    .pokemon-details-wrapper {  
+       gap: 2rem;
+    }
+    
+}
+
+.similar-type-pokemons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.similar-type-pokemons-wrapper span {
+    letter-spacing: 0.3rem;
+    font-size: large;
+    display: block;
+    margin: 1rem;
+}
+
+.similar-type-pokemons-wrapper a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.similar-type-pokemons-wrapper a:hover {
+    font-weight:800
+}
+
+
